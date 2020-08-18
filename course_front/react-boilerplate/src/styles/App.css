@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background: lightcoral;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page {
+    margin-left: 200px;
+    max-width: 1500px;
+    margin-right: 65px;
+}
+
+body {
+    overflow: auto; /* добавить полосу прокрутки */
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+    padding: 8px 16px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.item-name {
+    padding: 10px 16px;
+    margin: 5px 0;
+    box-sizing: border-box;
+}
+
+.content {
+    box-sizing: border-box;
+    min-height: 100%;
+    width: 100%;
+    height: 430px;
+    margin-bottom: 70px;
+    display: flex;
+}
+
+.left {
+    min-width: 530px;
+}
+
+.graph-block, .graph-description {
+    display: flex;
+}
+
+.needs-validation {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+.footer {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: auto;
+    max-width: 680px;
+    padding: 0 15px;
+}
+
+.graph {
+    border: 1px solid red;
+    border-radius: 15px;
+}
+
+.decision-item {
+    border: 1px solid red;
+    padding: 10px;
+    float: left;
+    width: 307px;
+
+    display: inline-block;
+    margin-right: 2%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    text-shadow: 4px 4px 5px darkred;
+    box-sizing: border-box;
+}
+
+.decision-item:last-child {
+    margin-right: 0;
+}
+
+.button {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: darkred;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button1 {
+    font-size: 10px;
+}
+
+.button1:disabled {
+    background-color: indianred;
+}
